@@ -32,6 +32,16 @@ function addItem(e) {
     li.appendChild(divInsideList);
     myList.appendChild(li);
 
+      li.addEventListener('click', function () {
+            spanInsideList.style.textDecoration = 'line-through';
+            spanInsideList.style.textDecorationThickness = '3px';
+            spanInsideList.style.textDecorationColor = '#c90c0f';
+
+        });
+        li.addEventListener('dblclick', function () {
+            spanInsideList.style.textDecoration = 'none';
+        });
+    
     //Store in local storage
     onLoadlocalStorage(itemValue);
 
