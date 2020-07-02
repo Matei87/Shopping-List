@@ -1,0 +1,73 @@
+/* DEFAULT SETTINGS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    background: #c90c0f;
+    height: 100%;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* PAGE SETTINGS */
+.container {
+    display: flex; justify-content: center; flex-direction: column;
+    border-radius: .25rem;
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+}
+
+.container h1.card-text {
+    margin: 30px 0; text-align: center;
+}
+
+.row {
+    margin: 0 auto 30px;
+}
+
+.card {
+    background: #ffc107 !important;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .3);
+}
+
+.form-group {
+    width: 100%; margin: 0 auto;
+}
+
+.container ul#myList {
+    list-style: none; margin: 0;
+    display: flex; flex-direction: column;
+}
+
+.container ul#myList li {
+    margin: .75rem 1rem .55rem 0;
+    display: flex; flex-direction: row;
+}
+
+.container ul#myList li span:first-letter {
+    text-transform: uppercase;
+}
+.container ul#myList li span:hover {
+    cursor: pointer;
+}
+.container ul#myList li div.delete-div {
+    font-size: 1rem; margin-left: auto;
+}
+
+.container ul#myList li div.delete-div:hover {
+    cursor: pointer;
+    color: #666;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+}
