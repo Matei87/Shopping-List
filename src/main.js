@@ -68,10 +68,11 @@ function onLoadlocalStorage(value) {
 
 //  Remove item from my shopping list
 function removeFromMyShoppingList(e) {
-    if (e.target.parentElement.classList.contains('delete-div'))
-    e.target.parentElement.parentElement.remove();
-    //  Remove from local storage
-    removeFromLocalStorage(e.target.parentElement.parentElement);
+    if (e.target.parentElement.classList.contains('delete-div')) {
+         e.target.parentElement.parentElement.remove();
+        //  Remove from local storage
+        removeFromLocalStorage(e.target.parentElement.parentElement);
+    }
 }
 
 //on load get values from local storage
