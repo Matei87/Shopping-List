@@ -1,7 +1,9 @@
-# Shopping-List
+# Shopping List
 
-My shopping list
+Shopping list is a To Do List.
 
 # Built With
 
-
+* Javascript
+* Bootstrap
+* jQuery
