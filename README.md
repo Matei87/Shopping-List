@@ -6,4 +6,3 @@ Shopping list is a To Do List.
 
 * Javascript
 * Bootstrap
-* jQuery
